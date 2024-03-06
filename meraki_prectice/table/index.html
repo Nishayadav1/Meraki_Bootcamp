@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="icon"  href="time.jpeg">
+</head>
+<style>
+   tr:nth-last-of-type(even) {
+    color: blue;
+    background-color: lightgray;
+}
+tr:nth-last-of-type(even) {
+    color: blue;
+    background-color:rosybrown;
+}
+th:first-of-type{
+    background-color:skyblue;
+}
+/* td:last-of-type{
+    background-color: aquamarine;
+} */
+tr:last-child > td:last-child {
+            background-color: yellow; 
+}
+td[rowspan='5'] {
+    background-color: hotpink;
+}
+tr:first-of-type{
+    background-color:red;
+}
+
+</style>
+<body >
+    <table align="center" border="1px"  cellspacing="10px" cellpadding="20px" width="80%" height="50%"><br>
+        <caption style="font-size:40px;"><u><b>Class Time Table</b></caption>
+        <thead> 
+            <tr>
+             <th colspan="8" style="font-size:30px;">Time Table</th>
+            </tr> 
+        </thead>
+        <tbody style="font-size:19px;">
+            <tr align="center">
+                <td >Day</td>
+                <td>I <br>09:00-10:00</td>
+                <td>II<br> 09:00-10:00</td>
+                <td>III <br> 09:00-10:00</td>
+                <td>Lunch Break</td>
+                <td>IV <br> 09:00-10:00</td>
+                <td>V <br> 09:00-10:00</td>
+                <td>VI <br> 09:00-10:00</td>
+            </tr>
+            
+            <tr align="center">
+                <td>Monday</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>Biology</td>
+                <td rowspan="5">Lunch Break</td>
+                <td>Chemistry</td>
+                <td>Math</td>
+                <td>Bengali</td>
+            </tr>
+
+            <tr align="center">
+                <td>Tuseday</td>
+                <td>Bengali</td>
+                <td>Math</td>
+                <td>Biology</td>
+                <td>Physics</td>
+                <td>Chemistry</td>
+                <td>English</td>
+            </tr>
+
+            <tr align="center">
+                <td>Wednesday</td>
+                <td>Chemistry</td>
+                <td>Bengali</td>
+                <td>Physics</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Math</td>
+            </tr>
+
+            <tr align="center">
+                <td>Thursday</td>
+                <td>Biology</td>
+                <td>Math</td>
+                <td>Bengali</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                <td>Physics</td>
+            </tr>
+
+            <tr align="center">
+                <td>Friday</td>
+                <td>Chemistry</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Bengali</td>
+                <td>Physics</td>
+                <td>Biology</td>
+            </tr>
+
+            <tr align="center">
+                <td>Saturday</td>
+                <td>math</td>
+                <td>Chemistry</td>
+                <td>Biology</td>
+                <td colspan="5">No Class</td>
+        
+            </tr>
+           
+        </tbody> 
+    </table>
+</body>
+</html>

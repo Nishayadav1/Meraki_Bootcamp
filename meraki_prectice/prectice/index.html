@@ -1,0 +1,192 @@
+<html></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- head element is a container for metadata (data about the HTML document) and other information that is not displayed on the webpage itself     -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--name="viewport"==== The viewport in HTML is the visible area of a webpage in a web browser. We use the viewport meta tag to control how the webpage is displayed on different devices. -->
+    <!-- ontent="width=device-width===== Setting width=device-width makes sure that a webpage fits the width of the device's screen, ensuring it looks good on all devices, which is important for responsive design. -->
+    <!-- initial-scale=1.0"====initial-scale=1.0 ensures that when the webpage loads, it appears at its original size without any zooming. This helps maintain consistency in how the page is displayed. -->
+    
+    <title>Document</title> 
+    <!-- <title> tag is used to define the title of the webpage. -->
+
+</head>
+
+<body>
+<!-- body element contains the content of a webpage visible to users, such as text, images, links, and other multimedia elements. It defines the main content area.     -->
+
+    <p>This is first paragraph</p>
+    <p>This is my <br> second paragraph</p>
+    <pre>Lorem ipsum
+         dolor sit amet consectetur 
+         adipisicing elit. Ut excepturi
+          placeat adipisci magnam hic nulla
+           dolorum commodi dolore
+            optio aliquid?</pre>
+    <P>This is third paragraph</P>
+    <!-- p==<p> (paragraph) tag is used to define a paragraph of text
+         br==<br> (line break) tag is used to insert a line break within text conten
+         pre==<pre> (preformatted text) tag is used to define preformatted text -->
+    <h1>This is the most important heading</h1>
+    <h2>This is second heading</h2>
+    <h3>This is third heading</h3>
+    <h4>This is fourth heading</h4>
+    <h5>This is fifth heading</h5>
+    <h6>This is sixth heading</h6>
+    
+     <!-- h1-h6==heaning -->
+
+
+    <p>Lorem ipsum dolor sit amet <strong>consectetur</strong> ,<mark>adipisicing</mark>  elit. Quasi, culpa.</p>
+    <hr>
+
+    <!-- strong=<strong> tag in HTML is used to highlight text, typically rendering it in bold, indicating its importance. -->
+    <!-- marK=<mark> tag highlights text, often used to indicate search results or important phrases within a block of text. -->
+    <!-- hr=<hr> tag creates a horizontal line -->
+
+    <p>Lorem ipsum dolor sit amet consectetur <b>adipisicing</b>  elit. Quod, voluptatem.</p> 
+    <b>This is just bold</b>
+    <strong>This is important</strong>
+
+     <!-- b= bold
+          i= italic
+          em= italic importance accoding i tags
+          Q= "" -->
+
+    <p><i>This is italic</i></p>
+    <p><em>This is emphasized</em></p>
+    <p> a<sup>3</sup>  Lorem ipsum dolor sit, amet <s>consectetur</s>  adipisicing elit. Necessitatibus nostrum ullam minus dolores corrupti aliquam, voluptas repudiandae delectus <del>sed</del>  labore saepe amet ab repellat, asperiores laborum odio alias quas culpa?   H<sub>2</sub>O</p> 
+
+     <!-- sub=<sub> tag: It is used to represent subscript text
+     sup=<sup> tag: This tag is used to represent superscript text. -->
+
+    <a href="http://www.google.com" target="_blank">Google</a>
+    <!-- href= specifies the URL
+    target=blank= open the another tab 
+    bydeflt=_self=open same tab -->
+
+
+    <img src="./images/nasa.jpg" alt="Nasa">
+    <!-- src=src: Specifies the URL (file path or web address) of the image fil
+    alt=The alt attribute provides alternative text for images, helpful for accessibility and displaying text when images fail to load. -->
+
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="./images/apple1.jpg">
+        <source media="(min-width: 465px)" srcset="./images/apple2.jpg">
+        <img src="./images/apple3.jpg" alt="Nasa">
+    </picture>
+
+    <!-- img=The <img> tag puts one image into a webpage. It uses the source attribute to find the image and has alternative text too.
+         picture=<picture> tag provides multiple sources for responsive images, allowing browsers to choose based on conditions.
+        source= midea for reponsive
+        srcset= URL -->
+
+
+    <div style="border: 2px solid red;">This is block level element <span style="border: 2px solid yellow;">This is span inside div</span></div>
+    <span style="border: 2px solid green;">This is inline element</span>
+
+    <!-- div=<div>: It's a block-level element used as a container to group other HTML elements together, 
+    span=<span>: It's an inline element used to apply styles or manipulate parts of text within a larger block of text.  -->
+
+    <ul type="square">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana
+            <ul>
+                <li>Green</li>
+                <li>Yellow</li>
+            </ul>
+        </li>
+        <li>Orange</li>
+    </ul>
+
+    <ol type="i">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ol>
+
+    <ol>
+        <li>Apple</li>
+        <li>Banana
+            <ol>
+                <li>Green</li>
+                <li>Yellow</li>
+            </ol>
+        </li>
+        <li>Orange</li>
+    </ol>
+
+    <!-- ul=<ul> creates an unordered list in HTML, displaying items with bullet points. It stands for "unordered list."
+    li=The <li> tag creates a list item in HTML, used within <ul> (unordered) or <ol> (ordered) list elements.
+    ol=The <ol> tag in HTML creates an ordered list, displaying items with numbers or letters in sequence. -->
+
+    <!-- block tags= its take whole and full width -->
+    <!-- inline tags= its take  width accoding own element size -->    
+
+    <!-- sysmentic tags:-
+        tags are tags that define the meaning of the content they contain. For example, tags like <header>, <article>, and <footer> are semantic HTML tags. 
+
+    nonsysmentic tags -== 
+    the use of HTML elements that do not have any inherent meaning, but are used to format and style content on a web page.,example=: <div> and <span> ->
+
+
+
+
+
+
+ <!-- ####################################################################day2###################################################################################################  -->
+
+    <dl>
+        <dl>discripton list</dl>
+        <dd>discription data</dd>
+        <dt>dicription table</dt>
+        <dd>discription data</dd>
+    </dl>
+    <!-- dl=discripton list
+         dd=discription data
+         dt=dicription table -->
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, recusandae?</p>
+         <p style="color: tomato;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, dignissimos?</p>
+         <p style="font-size: 50px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, numquam.</p>
+         <p style="background-color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A hic quo excepturi quae suscipit, similique voluptas atque unde quaerat totam?</p>
+         <p style="font-family: cursive;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, earum.</p>
+         <h2 style="text-align: center;">Heading</h2>
+         <p style="border:5px dashed red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nesciunt?</p>
+     
+         <!-- rgb  red, green, blue 0-255 -->
+         <!-- How many colors can we generate = 256 * 256 * 256 = 16777216 -->
+         <h4 style="color: rgb(255, 0, 0);">This is my heading</h4>
+       </body>
+       <h5 style="color: rgb(0, 0, 255);">This is my another heading</h5>
+       <p style="color: rgb(23,73,103);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellendus placeat quo odio? Voluptate quidem officiis sed, facilis nam ipsa nemo ut reprehenderit dolores neque perspiciatis. At, sequi assumenda. Pariatur.</p>
+     
+       <!-- rgba  red, green, blue, alpha  0-255, 0-1 -->
+     
+       <p style="background-color: rgba(0, 0, 255, 0.2);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ut cupiditate culpa aperiam earum atque iusto numquam? Totam, magnam? Eius.</p>
+     
+       <!-- hex code  #000000 - #ffffff -->
+       <p style="color: #dbed31;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint perspiciatis inventore fugit suscipit quidem soluta, cumque necessitatibus adipisci iusto amet explicabo, ullam natus quos eos repellat voluptatem aut, impedit quia.</p>
+     
+       <h3>This is my third heading.</h3>
+
+       <!-- ###########################################################12/2/2024################################################################################################################################################################################################################################## -->
+
+     
+
+</body>
+</html>
+
+
+
+

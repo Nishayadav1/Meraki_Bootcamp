@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("backsimple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+h1{
+    /* border: 2px solid white; */
+    margin: 2rem;
+    font-size:6rem;
+    text-shadow: 0 6px black;
+    background-color:transparent;
+    color:red;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box{
+    height:45rem;
+    width:26rem;
+    background-color: white;
+    border-radius:3rem;
+}
+
+
+img{
+    height:10rem;
+    margin-left:3rem;
+    border-radius: 3rem;
+    margin-top:1rem;
+
+}
+.buger-box{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+    
+}
+
+.menu-box{
+    margin:4rem 4rem 4rem 4rem ;
+    border:1rem solid white;
+}
+.items{
+    padding:1.5rem 1.5rem 1.5rem 1.5rem;
+}

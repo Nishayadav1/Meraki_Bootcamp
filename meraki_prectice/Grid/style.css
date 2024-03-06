@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height:20rem;
+    border: 2px solid rgb(245, 86, 13);
+    display: grid;
+    gap: 5px;
+
+    /* grid-template-columns: repeat(4,1fr); */
+    /* grid-template-columns: repeat(4,100px); */
+    /* grid-template-columns: repeat(auto-fill, 50px); */
+    
+
+    /* grid-template-columns: 200px auto 1fr ;----/---- */
+
+
+    /* grid-template-rows:20px 30px auto 60px auto; */
+    /* grid-template-rows: 70px 30px ;
+    grid-auto-rows: auto; */
+/* difine width */
+ /* grid-template-rows: 100px 100px 100px ; */
+    
+
+
+/* justify-content:center ; */
+/* justify-content: end; 
+----horizontal use*/
+
+/* align-content: space-around ; */
+/* same justify-content  
+--verticle use*/
+
+
+/* align-items: center; */
+
+/* grid-auto-rows:200px; */
+/* give-width */
+/* grid-auto-columns:50px; */
+/* giv-height */
+grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+
+
+
+     /* px -absulate
+     vw -relative 
+     1fr -fraction */
+}
+
+
+
+/* child properties */
+.box{
+    border: 2px solid blue;
+
+
+}
+#box-2{
+    /* grid-row-start:7;
+    grid-row-end:9;
+    grid-column-start:3;
+    grid-column-end:5; */
+    grid-area: 7/3/9/5 ;
+}

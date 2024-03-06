@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color:white;
+}
+nav{
+background-color: rgb(231, 163, 61);
+}
+.nav2{
+/* border:2px solid black; */
+height: 6rem;
+}
+#home{
+margin-top:2rem;
+margin-left:14rem;
+
+}
+
+.comtainer{
+height: 50%;
+width: 50%;
+border:2rem solid black;
+background-color: white;
+}
+h1{
+font-size:2.5rem;
+margin-top:1rem;
+}
+#p1,#div1, a,#div2, button, select,#p2{
+display: inline-block;
+}
+#div1{
+margin-top: 1.3rem;
+margin-left:25rem;
+}
+
+#div2{
+float:right;
+font-size:2rem;
+margin-top:1rem;
+margin-right:1rem;
+}
+
+a{
+text-decoration: none;
+font-size:1.5rem;
+display: inline-block;
+}
+a:hover{
+color:red;
+}
+#btn,select{
+border: none;
+}
+nav {
+border-style: outset;
+height: 5rem;
+}
+#p1{
+margin-left: 4rem;
+font-size:2rem;
+font-weight:10px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#div3, #div4, #div5{
+display: inline-block;
+}
+div a{
+margin-right:40px;
+}
+#div3{
+/* border-style: inset; */
+float:left;
+
+}
+#div4{
+/* border:2px solid gray; */
+float: left;
+margin-left:16rem;
+/* margin-top: 7rem; */
+}
+#div5{
+margin-right:17rem;
+float: right;
+border:2px solid gray;
+/* margin-top: 7rem; */
+height:36rem;
+background-image: url("bk1.jpeg");
+background-repeat:no-repeat;
+background-size: cover;
+padding:1rem;
+}
+.smallimg1{
+height:6rem;
+border:0.3rem solid rgb(175, 175, 175);
+
+
+} 
+.smallimg1:hover{
+height:8rem;
+border:0.3rem solid rgb(0, 0, 0);
+
+
+}
+.smallimg2{
+height:7rem;
+width:5rem;
+border:0.3rem solid rgb(175, 175, 175);  
+} 
+.smallimg2:hover{
+border:0.3rem solid rgb(0, 0, 0);
+height:8rem;
+width:6rem;
+border:0.3rem solid rgb(0, 0, 0);
+
+}
+.smallimg3{
+height:7rem;
+border:0.3rem solid rgb(175, 175, 175);  
+} 
+.smallimg3:hover{
+border:0.3rem solid rgb(0, 0, 0);
+height:8rem;
+border:0.3rem solid rgb(0, 0, 0);
+
+}
+.smallimg4{
+height:6rem;
+border:0.3rem solid rgb(175, 175, 175);  
+} 
+.smallimg4:hover{
+border:0.3rem solid rgb(0, 0, 0);
+height:8rem;
+border:0.3rem solid rgb(0, 0, 0);
+
+}
+.smallimg5{
+height:7rem;
+width:5rem;
+border:0.3rem solid rgb(175, 175, 175);  
+
+
+} 
+.smallimg5:hover{
+border:0.3rem solid rgb(0, 0, 0);
+height:8rem;
+width:6rem;
+border:0.3rem solid rgb(0, 0, 0);
+}
+#home{
+font-size:1.9rem;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#nisha{
+
+margin-left:22rem;
+
+}
+
+select option{
+ margin-right:3rem;
+}
+              
+#btn{
+font-size:1.5rem;
+margin-right: 1rem;
+background-color:rgb(228, 222, 222);
+height:40px;
+width:100px;
+border-radius:1rem;
+}
+#btn:hover{
+background-color: rgb(87, 87, 236);
+color:white;
+}
+#select1{
+
+font-size:1.5rem;
+height:39px;
+width:110px;
+border-radius: 1rem;
+background-color:rgb(228, 222, 222);
+}
+#select1:hover{
+background-color: rgb(87, 87, 236);
+color:white;
+}
+
+#btn2{
+background-color: rgb(226, 222, 222);
+height:2rem;
+width: 11rem;
+border-radius:0.3rem;
+
+}
+#btn2:hover{
+background-color: rgb(184, 183, 183);
+height:2.5rem;
+width: 11.5rem;
+border-radius:0.3rem;
+}
+
+#btn3{
+background-color: rgb(223, 219, 219);
+height:2rem;
+width: 14rem;
+border-radius:0.3rem;
+
+}
+#btn3:hover{
+background-color: rgb(184, 183, 183);
+height:2.5rem;
+width: 14.5rem;
+border-radius:0.3rem;
+}
+#svg{
+margin-top:1rem;
+}
+pre{font-size: 1rem;}
+#main_img{
+height:550px;
+width:300px;
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+
+#main_img:hover{
+height:600px;
+width:350px;
+/* border:0.5rem solid black ; */
+}
+select option:hover{
+background-color: aquamarine;
+}
+.sale{
+margin-left: 1rem;
+
+}
+.contect{
+margin-top:1rem;
+}
+.contect svg{
+margin-right:12px;
+}

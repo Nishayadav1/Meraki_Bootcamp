@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* border:2px solid black; */
+    height:97vh;
+    width:98vw;
+    display: flex;
+    /* align-items: center; */
+    
+}
+h1 {
+    font-size:2.6rem;
+    font-family: Roboto, "San Francisco", sans-serif;
+}
+.side-bar{
+    width:16rem;
+    height:56rem;
+    border:2px solid rgb(201, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:0.5rem;
+    box-shadow: 10px 10px 2px gainsboro;
+}
+
+.side-child-bar{
+    width:14rem;
+    height:53rem;
+    /* border:2px solid rgb(202, 16, 10); */
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    
+}
+ .heading{
+    height:3rem;
+    /* border: 2px solid orange; */
+ }
+ .icons{
+    height:45rem;
+    /* border: 2px solid orange; */
+    margin-top: 1.5rem;
+    /* margin:0.5rem; */
+ }
+ i{
+    font-size: 1.7rem;
+ }
+ #icons1{
+    height:27rem;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+ .icons2{
+    display:flex ;
+    gap:1rem;
+    margin: 1rem;
+    /* justify-content: space-around; */
+ }
+ .icon-p{
+    font-size:1.5rem;
+ }
+ .footericon{
+    height:3.5rem;
+    /* width: 4rem; */
+    /* border: 2px solid rgb(0, 255, 42); */
+ }
+.middle-body{
+    /* border:2px solid rgb(24, 55, 192); */
+    width:53rem;
+    height:56.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 1rem;
+    /* box-shadow: 10px 10px 2px gainsboro; */
+    /* box-shadow: 10px 10px 2px gainsboro; */
+
+}
+.middle-child-body{
+    /* border:2px solid rgb(172, 17, 17); */
+    width:50rem;
+    height:55rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* box-shadow: 10px 10px 2px gainsboro; */
+}
+.top-bar{
+    border:2px solid rgb(175, 174, 174);
+    width:50rem;
+    height:10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 2px gainsboro;
+}
+.bottom-bar{
+    border:2px solid rgb(196, 191, 191);
+    width:49rem;
+    height:45rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    
+}
+.bottom1{
+    height:3rem ;
+    width:48rem ;
+    display: flex;
+    justify-content:space-between;
+}
+
+.bot1{
+    display: flex;
+}
+
+.main-profile{
+    height:3rem;
+    width:3rem;
+    border: 2.5px solid rgb(96, 247, 58);
+    border-radius: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.4rem;
+    background-image:url("nisha.jpeg");
+    background-size: cover;
+}
+#main-id{
+    margin-top:1.2rem;
+    margin-left:0.5rem;
+    font-size: 1.3rem;
+}
+#dout{
+    margin-top:0.1rem;
+    
+}
+
+.bottom2{
+    height:28rem ;
+    width:48.7rem ;
+    margin-left:0.4px;
+    /* border: 2px solid green; */
+    background-image: url("mainimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#icon4{
+    display: flex;
+    gap: 1rem;
+}
+.bottom3{
+    height:1.7rem ;
+    width:46rem ;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right:3rem;
+}
+#dout1{
+    height:2rem;
+    width:6rem;
+    border: 2px solid black;
+    text-align: center;
+}
+#dout{
+    font-size:4rem;
+}
+.bottom4{
+    height:4rem ;
+    width:49rem ;
+    /* border: 2px solid green; */
+    display: flex;
+    margin-left: 1rem;
+    /* margin-right:3rem; */
+
+}
+#likeprofile{
+    display: flex;
+}
+.like{
+    height:2.5rem;
+    width:2.5rem;
+    border: 2px solid rgb(240, 68, 15);
+    border-radius:2rem;
+    background-image: url("deepta.jpeg");
+    background-size: cover;
+}  
+.like1{
+    height:2.5rem;
+    width:2.5rem;
+    border: 2px solid rgb(228, 69, 21);
+    border-radius:2rem;
+    background-image: url("sayba.jpeg");
+    background-size: cover;
+    position: absolute;
+    margin-left: 1.3rem;
+}  
+#likemgs{
+    margin-top:0.8rem;
+    margin-left:1.7rem;
+}
+.bottom5{
+    height:7rem ;
+    width:49rem ;
+    /* border: 2px solid green; */
+    margin-left: 1rem;
+}
+.bottom6{
+    height:4rem ;
+    width:46.5rem ;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    
+}
+#post{
+    font-size: 1.4rem;
+    color:rgb(79, 192, 226);
+    
+    
+}
+.right-bar{
+    margin-top: 2rem;
+    border:2px solid rgb(197, 197, 199);
+    width:36rem;
+    height:40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius:1rem;
+    box-shadow: 10px 10px 2px gainsboro;
+    /* align-items: center; */
+}
+.skybluecolor{
+    color:rgb(27, 12, 233);
+    font-size: 1.2rem;
+    /* font-weight: 6rem; */
+}
+.follow1{
+    /* border:2px solid rgb(24, 74, 3); */
+    width:35rem;
+    height:3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.graymiddle{
+    /* border:2px solid rgb(24, 74, 3); */
+    width:31rem;
+    height:2rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+  
+
+}
+.follow2{
+    /* border:2px solid rgb(24, 74, 3); */
+    width:35rem;
+    height:24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.status{
+    height:90px;
+    width:90px;
+    border:3px solid black;
+    border-radius:5rem;
+    background-image: url("nisha.jpeg");
+    background-size: cover;
+}
+.status-div{
+    text-align: center;
+}
+.status-child2{
+    height:90px;
+    width:90px;
+    border: 4px solid rgb(23, 236, 23);
+    border-radius:5rem;
+    background-image:url("sayba.jpeg") ;
+    background-size: cover;
+}
+.status-child3{
+    height:90px;
+    width:90px;
+    border: 4px solid rgb(23, 236, 23);
+    border-radius:5rem;
+    background-image:url("eransana.jpeg") ;
+    background-size: cover;
+}
+.status-child4{
+    height:90px;
+    width:90px;
+    border: 4px solid rgb(23, 236, 23);
+    border-radius:5rem;
+    background-image:url("chandni.jpeg") ;
+    background-size: cover;
+}
+.status-child5{
+    height:90px;
+    width:90px;
+    border: 4px solid rgb(23, 236, 23);
+    border-radius:5rem;
+    background-image:url("deepta.jpeg") ;
+    background-size: cover;
+}
+.status-child6{
+    height:90px;
+    width:90px;
+    border: 4px solid rgb(23, 236, 23);
+    border-radius:5rem;
+    background-image:url("shilpi.jpeg") ;
+    background-size: cover;
+}
+/* .follow1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} */
+
+.f1{
+    height:60px;
+    width:60px;
+    border: 3px solid rgb(206, 203, 203);
+    border-radius:5rem;
+    background-image:url("ravi.jpeg") ;
+    background-size: cover;
+}
+.fll{
+    height:60px;
+    width:60px;
+    border: 3px solid rgb(206, 203, 203);
+    border-radius:5rem;
+    background-image:url("eram1.jpeg") ;
+    background-size: cover;
+}
+
+.fll2{
+    height:60px;
+    width:60px;
+    border: 3px solid rgb(206, 203, 203);
+    border-radius:5rem;
+    background-image:url("sana1.jpeg") ;
+    background-size: cover;
+}
+.fll3{
+    height:60px;
+    width:60px;
+    border: 3px solid rgb(206, 203, 203);
+    border-radius:5rem;
+    background-image:url("shilpi1.jpeg") ;
+    background-size: cover;
+}
+.fll4{
+    height:60px;
+    width:60px;
+    border: 3px solid rgb(206, 203, 203);
+    border-radius:5rem;
+    background-image:url("sangeeta1.jpeg") ;
+    background-size: cover;
+}
+.fll5{
+    height:60px;
+    width:60px;
+    border: 3px solid rgb(206, 203, 203);
+    border-radius:5rem;
+    background-image:url("pagal1.jpeg") ;
+    background-size: cover;
+}
+.graymiddle{
+    /* border:2px solid rgb(24, 74, 3); */
+    width:35rem;
+    height:2rem;
+    /* display: flex;
+    justify-content: space-around; */
+   
+}
+.fol1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.f2{
+    /* border:2px solid black; */
+    height:3rem;
+    width:22rem;
+}
+#suggest{
+    margin-left: 1rem;
+    color: gray;
+    font-size: 1.2rem;
+}
+.black{
+    margin-right: 1rem;
+    /* color: gray; */
+    font-size: 1.2rem;
+}
+.boldblack{
+    font-weight: bolder;
+}
+.lastdiv{
+    margin-left: 1rem;
+    /* margin-top: 1rem; */
+    color: gray;
+}
+#commant{
+    display: flex;
+    gap: 1rem;
+}
+#col1{
+    margin-top: 0.3rem;
+}

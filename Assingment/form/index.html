@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <form> 
+       <h1>HTML Forms</h1>
+       <fieldset >
+       <legend> Authorization</legend>
+       <label for="login" >Loging : </label>
+       <input type="email" placeholder="entre email" id="login" required> 
+       <label for="password" >Password : </label>
+       <input type="password" placeholder="entre password" id="password" required> <br>
+       <label for="phone" >Phone no.: </label>
+       <input type="tel" placeholder="012-345-6789" id="phone" required><br>
+       <button type="submit">Submit</button>
+       </fieldset><br><br>
+       </form>  
+       
+       
+       <fieldset>
+           <!-- The <fieldset> tag draws a box around the related elements. -->
+       <legend>Registration</legend>
+       <!-- The <legend> HTML element represents a caption for the content of its parent <fieldset>-->
+       <form></form>    
+       <label for="name" >Name  </label>
+       <input text="text"  id="name"> <br>
+       <label for="name1" >Surname  </label>
+       <input text="text"  id="name1"> <br><br>
+       
+       <label>Gender</label><br>
+       <input  type="radio" name="gender" >
+       <lable  >Male</lable>
+       <input  type="radio" name="gender">
+       <lable >Fmale</lable>
+       <input type="radio" name="gender">
+       <lable >Other</lable><br>
+       
+       <label>Date of birth</label>
+       <input type="date"><br>
+       
+       <label>Country</label>
+       <select>
+           <option>Select...</option>
+           <optgroup label="Africa">
+               <!-- The <optgroup> tag is used to group related options in a <select> element (drop-down list). -->
+               <option>Egypt</option>
+               <option>kenya</option>
+           <optgroup label="Americas">
+               <option>Mexico</option>
+               <option>Argentina</option> 
+           </optgroup> 
+           <optgroup label="Asia">
+               <option>India</option>
+               <option>Japan</option>   
+           </optgroup>    
+           <optgroup label="Europe">
+               <option>Albania</option>
+               <option>Andorra</option>  
+           </optgroup>     
+       
+       </select><br>
+       
+       <label>Favorite color</label>
+       <input type="color" value="#000000" ><br>
+       
+       <label for="no">How many social account you have? </label>
+       <input type="number"  placeholder="select no." id="no"><br>
+       
+       <label for="password1">Password</label>
+       <input type="password" id="password1" required><br>
+       
+       <label for="Rpassword1">Repeat Password </label>
+       <input type="password" id="Rpassword1" required><br>
+       
+       <label for="email">Email</label>
+       <input type="email" id="email" required><br>
+       
+       <label for="file">Choose file:</label>
+       <input type="file" id="file" required><br>
+       
+       
+       <label>All details Have to required</label><br>
+       <input type="checkbox" id="check1" >
+       <label for="check1">Name</label><br>
+       <input type="checkbox" id="check2">
+       <label for="check2">D.O.B</label><br>
+       <input type="checkbox" id="check3" >
+       <label for="check3"> Country</label><br>
+       <input type="checkbox" id="check4">
+       <label for="check4">Password & Repeat Password</label><br>
+       
+       
+       <button type="submit">Registration</button>
+       </fieldset><hr>
+       <p>Made By- Nisha</p>
+       </form>  
+       </fieldset>
+       
+</body>
+</html>
