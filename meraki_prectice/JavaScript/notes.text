@@ -1,0 +1,68 @@
+
+What is JavaScript ?
+
+JavaScript is a Scripting Language.
+It is a single-threaded programming language. It runs Code
+line by line.
+JavaScript is a Dynamically type language.
+
+HTML - Create Page Strucure
+CSS - Add Style
+(Static WebPage)
+
+JS - Make our page Live(Interactive)(Dynamic Webpage)
+
+Programs - Script
+
+Programs - Set of Instruction (Cook for me)
+
+History - 
+Brendan Eich - 1995 (10 Days) - 
+
+LiveScript(initial name) - Java
+
+JavaScript - frontend / backend (Node.js)
+Client / Server
+
+Js Engine -
+
+V8 - Chorme, Opera, MS Edge
+SpiderMonkey - Firefox
+
+What Engine Do - 
+Read Script, Complilar convert it into Machine Code
+
+ECMAScript
+It is a standard for scripting languages, 
+including JavaScript, JScript, and ActionScript.
+
+It Ensure Compatablity between diffrent browsers.
+
+Two Ways to Add JS - 
+Internal
+External
+
+Advantage of External -
+
+Types Of Comment
+Single Line, Multi Line Comment
+
+// starting of the line 
+
+/* Statement */ - for multi lines
+
+Use of Comment - 
+
+Buy Reciepe Book - (ECMAScript) - rule
+ES5- Variable
+
+Food (JavaScript) - follow
+
+Variable - 
+It is a container, Value Store/Data.
+Data- Text / Number / Mixed Collection of Text and Number
+
+let  Variable-name; (declared)
+Variable-name = data/value;
+
+const Variable-name = data (declared + Assigned)

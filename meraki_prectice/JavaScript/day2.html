@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app1.js" defer></script> 
+
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        //DOM is ready
+        console.log("Hello World - after DOM is ready");
+        let button = document.getElementById("btn"); // button
+        let text = document.getElementById("text"); //text
+
+        button.addEventListener("click", function () {
+          //change text on button click
+          text.innerHTML = "Hii";
+        });
+      });
+    </script> -->
+  </head>
+  <body>
+    <h1>Day-2</h1>
+
+    <!-- defer- wait for the HTML to be parsed and then execute the script
+
+    async- download the script and execute it as soon as possible
+    aysnc- download Finish > Excute > Pause HTML parsing > Rendering Resume -->
+
+    <!-- Script - Parsar Blocker
+    Parser Blocker / Render Blocking / Paint Blocking -->
+
+    <button id="btn">Say Hii</button>
+    <p id="text"></p>
+
+    <!-- Inline Handler -->
+    <!-- <button id="btn" onclick="SayHI()">Say Hii</button> -->
+
+    <!-- Internal -->
+    <!-- <script>
+        console.log("Hello World - before closing body");
+    </script> -->
+    
+    <!-- <script>
+        let button = document.getElementById('btn'); // button
+        let text = document.getElementById('text'); //text
+
+        button.addEventListener('click', function(){  //change text on button click
+            text.innerHTML = "Hii";
+        });
+    </script> -->
+
+    <!-- HTML , DOM - Render
+    CSS , CSSOM - Apply the style
+    JS , Execution - Apply the behavior -->
+
+    <script src="app1.js"></script>
+  </body>
+</html>
