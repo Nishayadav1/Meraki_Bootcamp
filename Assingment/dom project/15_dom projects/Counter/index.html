@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .main{
+        height:100vh;
+        width:100vw ;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div1{
+        background-color: white;
+        height:50vh;
+        width:50vw ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:2rem;
+    }
+    .content{
+        height:45vh;
+        width:45vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .btn_div{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        height:5rem;
+        width:25rem;
+    }
+    button{
+        height:2.7rem;
+        width:7rem;
+        border-radius: 2rem;
+        font-size:1.1rem;
+        cursor: pointer;
+        background-color:rgb(151, 151, 229);
+    }
+    button:hover{
+        background-color:rgb(206, 153, 236);
+    }
+
+    span{
+        font-size: 5rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+
+</style>
+<body>
+    <section class="main">
+        <div class="div1">
+          <div class="content"> 
+                <h1>Counter</h1>
+                <span id="counter">0</span>
+                <div class="btn_div">
+                    <div class="btnChild1" id="btn1">
+                        <button>Increase</button>
+                    </div>
+                    <div class="btnChild1" id="btn2">
+                        <button>Reset</button>
+                    </div>
+                    <div class="btnChild1" id="btn3">
+                        <button>Decrease</button>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        const counter= document.querySelector("#counter")
+        const btns=document.querySelector('.btnchild1')
+        const decreaseBtn=document.querySelector('#btn3')
+        const increaseBtn=document.querySelector('#btn1')
+        const resetBtn=document.querySelector('#btn2')
+
+        let count=0
+        
+        increaseBtn.onclick=function(){
+            count++;
+            counter.textContent=count;
+            updateCounterColor();
+
+        }
+        decreaseBtn.onclick=function(){
+            count--;
+            counter.textContent=count;
+            updateCounterColor();
+
+        }
+        resetBtn.onclick=function(){
+            count=0;
+            counter.textContent=count;
+            updateCounterColor();
+        }
+
+        function updateCounterColor(){
+            if (count > 0){
+                counter.style.color = "green";
+            } else if (count === 0){
+                counter.style.color = "black";
+            } else {
+                counter.style.color = "red";
+            }
+        }
+        
+    </script>
+</body>
+</html>

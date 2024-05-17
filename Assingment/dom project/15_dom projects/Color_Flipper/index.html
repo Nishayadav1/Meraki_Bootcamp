@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Fliper</title>
+</head>
+<!-- start css -->
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height:25rem;
+        width:25rem;
+        border: 5px solid gray;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:2.5rem;
+        color:white;
+    }
+    button{
+        margin-top: 2rem;
+        margin-left: 7rem;
+        height:3rem;
+        width: 11rem;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+</style>
+<!-- end css -->
+
+
+<body>
+    
+    <!-- start html -->
+    <div class="main">
+    <div class="box" id="box1">#fff</div>
+    <button id="btn">Click</button>
+     <!-- end html -->
+
+
+     <!-- start js -->
+    <script>
+        const getColor=()=>{
+            const hash="#"
+            const randomNUmber=hash+(Math.floor(Math.random()*1677215).toString(16));
+            // console.log(randomNUmber)
+            // const randomCode="#" +(randomNUmber.toString(16))
+            // console.log(randomCode)
+            console.log(randomNUmber)
+            document.getElementById("box1").style.background=randomNUmber
+            document.getElementById("box1").innerText=randomNUmber
+        }
+        document.getElementById("btn").addEventListener(
+            "click",
+            getColor
+        )
+    </script>
+    <!-- end js -->
+
+
+</body>
+</html>
