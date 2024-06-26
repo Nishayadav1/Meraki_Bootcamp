@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #282c34;
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+    }
+    
+    .container {
+        text-align: center;
+        
+        height:22rem;
+        width:30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 9px 9px 5px lightblue;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+    
+    .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .time-section {
+        background: #444;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+    
+    .time {
+        font-size: 3em;
+        display: block;
+    }
+    
+    .label {
+        font-size: 1em;
+        margin-top: 10px;
+        color: #bbb;
+    }
+    input{
+        width: 3rem;
+        height: 1.3rem;
+    }
+    .timer{
+        display: flex;
+        gap:1rem;
+        margin-bottom: 2rem;
+        border: none;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <div class="timer">
+            <div><label for="">Month: </label>
+                <input type="text" placeholder=" month"></div>
+
+            <div><label for="">Date: </label>
+                <input type="text" placeholder="date"></div>
+
+            <div><label for="">Year: </label>
+                <input type="text" placeholder="year"></div>
+            
+        </div>
+        <div class="countdown">
+            <div class="time-section">
+                <span id="days" class="time">0</span>
+                <div class="label">Days</div>
+            </div>
+            <div class="time-section">
+                <span id="hours" class="time">0</span>
+                <div class="label">Hours</div>
+            </div>
+            <div class="time-section">
+                <span id="minutes" class="time">0</span>
+                <div class="label">Minutes</div>
+            </div>
+            <div class="time-section">
+                <span id="seconds" class="time">0</span>
+                <div class="label">Seconds</div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
