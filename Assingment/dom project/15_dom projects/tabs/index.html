@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        height: 100vh;
+    }
+
+    .container{
+        height: 30rem;
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4f4f4;    
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 1.5rem;
+    }
+    .main-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        gap:1rem;
+    }
+    img{
+        height: 30rem;
+        width: 40rem;
+        border: 1px solid #f4f4f4;
+        box-shadow: 0 4px 8px 0 rgba(29, 10, 10, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #header{
+       width:60rem;
+       height: 10rem;
+    }
+    h1{
+        font-size:3rem;
+        text-align: center;
+    }
+    #pera1{
+        color: gray;
+    }
+    h2{
+        text-align: center;
+        margin: 1.6rem 0;
+        font-size: 36px;
+    }
+    #tabs{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #333;
+        margin-bottom: 1.6rem;
+        border-radius: 8px;
+    }
+    
+    #tabs div{
+        padding: 20px 30px;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    #tabs div:hover{
+        background-color: #555;
+    }
+    p{
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 1rem;
+    }
+    #content{
+        padding: 2rem 2rem 2rem 2rem;
+    }
+</style>
+<body>
+    <div id="header"><h1>About</h1>
+    <p id="pera1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ut animi exercitationem, qui voluptate earum blanditiis delectus repellendus, voluptatum corrupti consequatur,
+    </p></div>
+    <div class="main-container">
+        <img src="park.jpg" alt="">
+        <div class="container">
+            <h2>Tab to see!</h2>
+            <div id="tabs">
+                <div id="Home" >Home</div>
+                <div id="Vision">Vision</div>
+                <div id="Goals">Goals</div>
+            </div>
+            <div id="content">
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
+
+

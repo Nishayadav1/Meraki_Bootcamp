@@ -3,80 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reviews/Quotes</title>
+    <title>Animal's Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body{
-        height:100vh;
+        height: 100vh;
+        background-color: black;
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .main_container{
-        border: 2px solid red;
-        height:40rem;
-        width:35rem;
-    }
-    #img{
-        height:7rem;
-        width:7rem;
-        border: 2px solid blue;
-    }
-    #name{
-        height:3rem;
-        width:35rem;
-        border: 2px solid green;
-    }
-    #about{
-        height:5rem;
-        width:35rem;
-        border: 2px solid orange;
-    }
-    #direction{
-        height:15rem;
-        width:35rem;
-        border: 2px solid gray;
-    }
-    #random{
-        height:4rem;
-        width:35rem;
-        border: 2px solid gold;
-    }
-    .child_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .container{
+    .main-container{
+       
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+
+    }
+   
+    #container{
+        border: 5px solid #ffbe6f;
+        height: 35rem;
+        width: 45rem;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        border: 2px solid rgb(107, 158, 235);
+        box-shadow: 9px 9px 5px rgb(106, 182, 233);
+    }
+    #cent-div{
+        height: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction:column;
+        
+    }
+    #img-div{
+        width: 100%;
+        height: 11rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.5rem 0 2.5rem;
+    
+    }
+    h1{
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 5px 4px #72d3eb;
+    }
+    h2{
+        font-size: 4rem;
+        text-shadow: 2px 1px 4px #72d3eb;
+    }
+    img{
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        border: 5px solid #28a5f8;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    #reviews{
+        height: 15rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-}
+        border: 1px solid rgb(240, 228, 67);
+        background-color: #d2d3d2;
+        padding: 1rem 2rem 1rem 2rem;
+        box-shadow: 9px 9px 5px rgb(250, 218, 129);
+        font-size: 22px;
+    }
+    button{
+        padding: 1rem;
+        border: none;
+        background: none;
+        transition:0.2s;
+        cursor: pointer;
+    }
+    button:hover{
+        transform: rotate(360deg);
+    }
+    .fa-solid{
+        font-size: 3rem;
+    }
+    .header>p{
+        font-size: 1.2rem;
+        padding: 0 0 0 1rem;
+    }
 </style>
 <body>
-    <div class="main_container">
-            <div class="child_container">
-            <h1>Our Reviews</h1>
-            <div class="container">
-                <div class="div-" id="img">hfh</div>
-                <div class="div-" id="name">
-                    <div class="p">
-
+    <div class="main-container">
+        <h1>Reviews of profiles</h1>
+        <div id="container">
+            <div>
+                <button id="left">
+                    <i class="fa-solid fa-angle-left fa-2xl" style="color: #ffbe6f;"></i>
+                </button>
+            </div>
+            <div id="cent-div">
+                <div id="img-div">
+                    <div class="header">
+                        <h2 id="name">Snake</h2>
+                        <p>I am a girl</p>
                     </div>
-                </div>            
-                <div class="div-" id="about">mn,</div>  
-                <div class="div-" id="direction">< ></div>
-                <div class="div-" id="random">kml</div>  
-        </div>         
+                    <img id="pic" src="img/snake.jpeg" alt="Img is lodding....">
+                </div>
+                <p id="reviews">Many people fear snakes for their potential venom. However, most snakes are non-venomous and vital for controlling pests like rodents.</p>
+            </div>
+            <div>
+                <button id="right">
+                    <i class="fa-solid fa-angle-right fa-2xl" style="color: #ffbe6f;"></i>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
+<script src="worj.js"></script>
 </html>
-<!-- rjhgiuerhgncmdnfeighrvng e eirj cvnruh cneuf djfhr 
- cfnru money xfuewf xncbeiuf cvbjker kjeoif 
- feu vru dnwiue cvbfj feuir bjf cbru cvbru 
- heurf rug vnru bvherf monkry 
- komsaljelf mnejfh dfru bvecvbg cruhgeri nvbf nvbfh 
- hoe bfuief  vjf skajh  fj fbejf bvr cnvbfh  komal
- jhfeire cbvfh  -->

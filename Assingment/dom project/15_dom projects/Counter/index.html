@@ -4,68 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter App</title>
-</head>
-<style>
-    *{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
-    .main{
-        height:100vh;
-        width:100vw ;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .div1{
-        background-color: white;
-        height:30vh;
-        width:30vw ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius:1rem;
-        box-shadow: 12px 12px 7px rgb(72, 207, 144);
-    }
-    .content{
-        height:45vh;
-        width:45vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    .btn_div{
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        height:5rem;
-        width:25rem;
-    }
-    button{
-        height:2.7rem;
-        width:7rem;
-        border-radius: 2rem;
-        font-size:1.1rem;
-        cursor: pointer;
-        background-color:rgb(22, 175, 116);
-    }
-    button:hover{
-        background-color:rgb(110, 235, 176);
-        color:white;
-    }
-
-    span{
-        font-size: 5rem;
-    }
-    h1{
-        font-size: 4rem;
-    }
-
-</style>
+    <link rel="stylesheet" href="style.css">
+</head>    
 <body>
     <section class="main">
         <div class="div1">
@@ -86,44 +26,6 @@
         </div>
         </div>
     </section>
-
-    <script>
-        const counter= document.querySelector("#counter")
-        const btns=document.querySelector('.btnchild1')
-        const decreaseBtn=document.querySelector('#btn3')
-        const increaseBtn=document.querySelector('#btn1')
-        const resetBtn=document.querySelector('#btn2')
-
-        let count=0
-        
-        increaseBtn.onclick=function(){
-            count++;
-            counter.textContent=count;
-            updateCounterColor();
-
-        }
-        decreaseBtn.onclick=function(){
-            count--;
-            counter.textContent=count;
-            updateCounterColor();
-
-        }
-        resetBtn.onclick=function(){
-            count=0;
-            counter.textContent=count;
-            updateCounterColor();
-        }
-
-        function updateCounterColor(){
-            if (count > 0){
-                counter.style.color = "green";
-            } else if (count === 0){
-                counter.style.color = "black";
-            } else {
-                counter.style.color = "red";
-            }
-        }
-        
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
