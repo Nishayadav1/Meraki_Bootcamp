@@ -1,114 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Side_bar</title>
-</head>
-<style>
-    body{
-        background-color:black;
-    }
-    .container{
-        display: flex;
-        justify-content: space-between;
-    }
-    h1{
-        box-shadow: 9px 9px 5px lightblue;
-    }
-    #iconlast{
-        font-size: 3rem;
-        margin-top: 1rem;
-        margin-right: 2rem;
-        cursor: pointer;
-        text-shadow: 2px 3px 4px #4963d4;
-    }
-    #iconlast:hover{
-        font-size: 4rem
-
-    }
-    .sidebar{
-        background-color:white;
-        height: 98vh;
-        width:22vw;
-    }
-    #icon1{
-        font-size:1.7rem; 
-        text-shadow: 2px 3px 4px #e76262; 
-        cursor: pointer;
-        transition:transform 1s;
-    }
-    #icon1:hover{
-        transform: rotate(360deg);
-
-    }
-    .d1{
-        padding: 1.3rem 1.8rem 0 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .d2{
-        margin-top: 3rem;
-        display: flex;
-        flex-direction:column;
-        padding-left:2rem;
-        gap:2rem;
-    }
-    .h{
-        font-size: 1.8rem;
-        color:gray;
-        cursor: pointer;
-    
-    }
-    .h:hover{
-        background-color: #b5d8f3;
-        height: 3rem;
-        padding-top: 1rem ;
-        padding-left: 1rem;
-        text-shadow: 1px 1px 2px #2b2a2a;
-        
-    }
-    #icons{
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        margin-top:30rem;
-    
-    }
-    i{
-        font-size:1.7rem;
-        cursor: pointer;
-    }
-    span{
-        color: rgb(74, 184, 235);
-    }
-</style>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
+      <div class="sidebar">
+        <div class="side1">
             <div class="d1">
-                <div class="heading"><h1>C o d i n g <span>A d d i c t</span></h1></div>
-                <div id="icon1"><i class="fa-solid fa-x fa-sm" style="color: #e60510;"></i></div>
+            <div class="heading">
+                <h1>C o d i n g <span>A d d i c t</span></h1>
+            </div>
+            <div id="icon1">
+                <i class="fa-solid fa-x fa-sm" style="color: #e60510"></i>
+            </div>
             </div>
 
             <div class="d2">
-                <div class="h" id="h1">Home</div>
-                <div class="h">About</div>
-                <div class="h">Projects</div>
-                <div class="h">contanct</div>
+            <div class="h" id="h1">Home</div>
+            <div class="h">About</div>
+            <div class="h">Projects</div>
+            <div class="h">contanct</div>
             </div>
 
             <div id="icons">
-                <div><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></div>
-                <div><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></div>
-                <div><i class="fa-brands fa-behance" style="color: #74C0FC;"></i></div>
-                <div><i class="fa-brands fa-linkedin" style="color: #74C0FC;"></i></div>
-                <div><i class="fa-solid fa-gem" style="color: #74C0FC;"></i></div>
+            <div>
+                <i class="fa-brands fa-facebook" style="color: #74c0fc"></i>
+            </div>
+            <div><i class="fa-brands fa-twitter" style="color: #74c0fc"></i></div>
+            <div><i class="fa-brands fa-behance" style="color: #74c0fc"></i></div>
+            <div>
+                <i class="fa-brands fa-linkedin" style="color: #74c0fc"></i>
+            </div>
+            <div><i class="fa-solid fa-gem" style="color: #74c0fc"></i></div>
             </div>
         </div>
-        <div id="iconlast"><i class="fa-solid fa-bars fa-sm" style="color: #74C0FC;"></i></div>
+      </div>
+
+      <div id="iconlast">
+        <i class="fa-solid fa-bars fa-sm" style="color: #74c0fc"></i>
+      </div>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

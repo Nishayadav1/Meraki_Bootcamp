@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(162, 248, 248);
+}
+.main-container{
+    text-align: center;
+}
+.conent_container{
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    gap: 0.5rem;
+}
+input{
+    width:3.3rem;
+    height:2rem;
+    font-size:1.3rem;
+    border: none;
+    border-radius:0.5rem;
+}
+h1{
+    font-size: 3rem;
+}
+button{
+    height:2.5rem;
+    width:8.5rem;
+    border-radius:0.5rem;
+    font-size: 1.4rem;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(85, 180, 243);
+}
+button:hover{
+    color: rgb(58, 96, 219);
+    background-color: rgb(157, 206, 238);
+}
+.main2_container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.para{
+   width: 60rem;
+   margin-top:3rem;
+   font-size: 1.5rem;
+}

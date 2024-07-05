@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown Timer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Countdown Timer</h1>
-        <div class="timer">
-            <div><label for="">Month: </label>
-                <input type="text" placeholder=" month"></div>
-
-            <div><label for="">Date: </label>
-                <input type="text" placeholder="date"></div>
-
-            <div><label for="">Year: </label>
-                <input type="text" placeholder="year"></div>
-            
+      <h1>Countdown Timer</h1>
+      <div class="timer">
+        <div>
+            <label for="">Date: </label> <input type="text" placeholder="date" id="date" />
         </div>
-        <div class="countdown">
-            <div class="time-section">
-                <span id="days" class="time">0</span>
-                <div class="label">Days</div>
-            </div>
-            <div class="time-section">
-                <span id="hours" class="time">0</span>
-                <div class="label">Hours</div>
-            </div>
-            <div class="time-section">
-                <span id="minutes" class="time">0</span>
-                <div class="label">Minutes</div>
-            </div>
-            <div class="time-section">
-                <span id="seconds" class="time">0</span>
-                <div class="label">Seconds</div>
-            </div>
+
+        <div>
+            <label for="">Month: </label><input type="text" placeholder=" month" id="month"/>
         </div>
+        
+        <div>
+          <label for="">Year: </label> <input type="text" placeholder="year" id="year"/>
+        </div>
+      </div>
+      <div class="countdown">
+        <div class="time-section">
+          <span id="days" class="time">0</span>
+          <div class="label">Days</div>
+        </div>
+        <div class="time-section">
+          <span id="hours" class="time">0</span>
+          <div class="label">Hours</div>
+        </div>
+        <div class="time-section">
+          <span id="minutes" class="time">0</span>
+          <div class="label">Minutes</div>
+        </div>
+        <div class="time-section">
+          <span id="seconds" class="time">0</span>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+      <div class="btn">
+        <button id="start">start timer</button>
+      </div>
     </div>
-   <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

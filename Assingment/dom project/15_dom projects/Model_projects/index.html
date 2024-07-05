@@ -4,52 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body{
-        height: 52vh;
-        width: 90vw;
-        background-image:url("modelbackgrond.jpeg");
-        background-repeat: no-repeat;
-        margin-top: 2rem;
-        background-position: center;
-        background-size: 100% ;
-
-    }
-    .container{
-        height:15rem;
-        width:35rem;
-        background-color:white;
-        margin-top:15rem;
-        margin-left:40rem;
-        box-shadow: 10px 10px 5px lightblue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1.2rem;
-    }
-    h1{
-        font-size: 4rem;
-        color:rgb(233, 18, 18);
-        text-shadow: 2px 3px 4px #4963d4;
-    }
-    button{
-        height:3rem ;
-        width:10rem;
-        font-size:1.2rem;
-        border-radius: 1.5rem;
-        background-color: cornflowerblue;
-        cursor: pointer;
-    }
-    button:hover{
-        background-color:rgb(137, 175, 247) ;
-    }
-</style>
 <body>
+    <div class="main-container">
     <div class="container">
        <h1>Model Projects</h1>
-       <button> OPEN MODEL </button>
+       <button id="btn1"> OPEN MODEL </button>
     </div>
+    <div class="overlay">
+        <button id="btn2">
+            <i class="fa-solid fa-xmark" style="color: #e10909;"></i>
+        </button>
+
+        <h3>Model content</h3>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
