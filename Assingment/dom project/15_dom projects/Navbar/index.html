@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Document</title>
-</head>
-<style>
-    body{
-        background-color: #080808;
-    }
-    #nav{
-        padding:0 2rem 0 2rem;
-        height: 4rem;
-        display: flex;
-        justify-content:space-between;
-        background-color: white;
-        box-shadow: 9px 9px 5px rgb(129, 214, 243);
-    }
-    span{
-        color: rgb(104, 195, 238);
-    }
-    .left_elemet{
-        display: flex;
-        align-items: center;
-        font-size: 2.5rem;
-        text-shadow: 2px 2px 3px #2b2a2a;
-    }
-    .middel_elemet{
-        display: flex;
-        gap:4rem;
-        align-items: center;
-        font-size: 1.5rem;
-        font-family:Arial, Helvetica, sans-serif;
-    }
-    .right_elemet{
-        display: flex;
-        gap:2rem;
-        align-items: center;
-        font-size: 1.5rem;
-        color:rgb(104, 195, 238);
-    }
-    .middel1{
-        text-shadow: 1px 1px 1px #2b2a2a;
-    }
-  
-</style>
-<body>
-    <nav>
-       <div id="nav">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>NavBar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="container1">
+      <div id="nav">
         <div class="left_elemet">
-            <p>Coding <span>Addict</span></p>
+          <p>Coding <span>Addict</span></p>
         </div>
         <div class="middel_elemet">
-            <div class="middel1">Home</div>
-            <div class="middel1">Project</div>
-            <div class="middel1">About</div>
-            <div class="middel1">Contect</div>
+          <div class="middel1">Home</div>
+          <div class="middel1">Project</div>
+          <div class="middel1">About</div>
+          <div class="middel1">Contect</div>
         </div>
         <div class="right_elemet">
-            <!-- <i class="fa-solid fa-bars"></i> -->
-            <div><i class="fa-brands fa-facebook" style="color: #74C0FC;"></i></div>
-            <div><i class="fa-brands fa-twitter" style="color: #74C0FC;"></i></div>
-            <div><i class="fa-brands fa-behance" style="color: #74C0FC;"></i></div>
-            <div><i class="fa-brands fa-linkedin" style="color: #74C0FC;"></i></div>
-            <div><i class="fa-solid fa-gem" style="color: #74C0FC;"></i></div>
+          <div>
+            <i class="fa-brands fa-facebook" style="color: #74c0fc"></i>
+          </div>
+          <div><i class="fa-brands fa-twitter" style="color: #74c0fc"></i></div>
+          <div><i class="fa-brands fa-behance" style="color: #74c0fc"></i></div>
+          <div>
+            <i class="fa-brands fa-linkedin" style="color: #74c0fc"></i>
+          </div>
+          <div><i class="fa-solid fa-gem" style="color: #74c0fc"></i></div>
+          <div>
+            <i id="menubar" class="fa-solid fa-bars" style="color: #74c0fc"></i>
+          </div>
         </div>
-       </div>
+      </div>
     </nav>
-    <script>
+    <div class="container">
+      <div class="sidebar">
+        <div class="side1">
+          <div class="d1">
+            <div class="heading">
+              <h1>C o d i n g <span>A d d i c t</span></h1>
+            </div>
+            <div>
+              <i
+                id="menubar2" class="fa-solid fa-bars" style="color: #74c0fc"
+              ></i>
+            </div>
+          </div>
 
-    </script>
-</body>
+          <div class="d2">
+            <div class="h" id="h1">Home</div>
+            <div class="h">About</div>
+            <div class="h">Projects</div>
+            <div class="h">contanct</div>
+          </div>
+
+          <div id="icons">
+            <div>
+              <i class="fa-brands fa-facebook" style="color: #74c0fc"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-behance" style="color: #74c0fc"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-linkedin" style="color: #74c0fc"></i>
+            </div>
+            <div><i class="fa-solid fa-gem" style="color: #74c0fc"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
