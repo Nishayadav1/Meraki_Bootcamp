@@ -1,18 +1,15 @@
-// const iconButton=document.getElementById("iconlast")
-// const sideBar=document.getElementsByClassName("sidebar")
-// iconButton.addEventListener("click",function(){
-//    sideBar.style.diplay="block"
-// })
+let menuBar = document.querySelector("#menubar");
+let sideBar = document.querySelector(".sidebar");
+// let iconClose = document.querySelector("#icon1");
 
-// const iconButton = document.getElementById("iconlast");
-// const sideBar = document.getElementsByClassName("sidebar")[0]; // Access the first element in the collection
+function toggleMenu() {
+    // console.log(sideBar.classList)
+    if (sideBar.classList.contains("hidden")) {
+        sideBar.classList.remove("hidden");
+    } else {
+        sideBar.classList.add("hidden");
+    }
+}
 
-// iconButton.addEventListener("click", function() {
-//     if (window.innerWidth < 1550) {
-//         if (sideBar.style.display === "block") {
-//             sideBar.style.display = "none";
-//         } else {
-//             sideBar.style.display = "block";
-//         }
-//     }
-// });
+menuBar.addEventListener("click", toggleMenu);
+// iconClose.addEventListener("click", toggleMenu);
