@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    position: fixed;
+    top: -1rem;
+    width: 100%;
+
+}
+#logo img{
+    height:4rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+
+}
+.logobar{
+    background-color:rgb(241, 239, 239);
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    display: none;
+}
+.fa-solid{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+.logonav{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 239, 239);
+    display: none;
+}
+ul{
+    text-align: right;
+    height: 4rem;
+    background-color:rgb(241, 239, 239);
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 1rem;
+}
+a {
+    color:black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+a:hover {
+    color: rgb(50, 203, 214);
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+.content {
+    text-align: center;
+}
+#home {
+    background-color: pink;
+    background-image: url(./img/img.jpg);
+    background-size: cover;
+}
+
+#home .content {
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+h1{
+    font-size: 3rem;
+}
+button{
+    height: 2.5rem;
+    background-color: transparent;
+    border-radius: 1rem;
+}
+button:hover{
+    background-color: aquamarine;
+
+}
+
+#home h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.3rem;
+}
+
+#about {
+    background-color: pink;
+    background-image: url(./img/about.jpg);
+    background-size: cover;
+}
+
+#services {
+    background-color: pink;
+    background-image: url(./img/service.png);
+    background-size: cover;
+    color: white;
+}
+
+#tours {
+    background-color: pink;
+    background-image: url(./img/contect.avif);
+    background-size: cover;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media(max-width:917px){
+    ul{
+        display: none;
+    }
+    .logobar{
+        display: block;
+        display: flex;
+    }
+    .content p{
+        display: none;
+    }
+    #home .content{
+        padding-top: 1px;
+    }
+
+
+}
