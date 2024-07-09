@@ -5,92 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Grocery_Bud</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body{
-        margin:0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: rgb(150, 204, 240);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+<body>
+    <section>
+        <div class="main-container">
+            <div class="header">
+                <h1>Grocery_Bud</h1>
+            </div>
 
-    }
-    .main-container{
-        border: 2px solid white;
-        background-color: white;
-        height:20rem;
-        width:35rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 5rem;
-        border-radius: 1rem;
-        gap: 1rem;
-        padding: 0.5rem;
-        box-shadow: 9px 9px 5px rgb(40, 172, 216);
+            <div class="items">
+                <input type="text" id="grocery-input" placeholder="e.g. eggs">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+
+            <div class="item-list" id="item-list"></div>
+
+            <div class="clear-items">
+                <button id="clear">Clear Items</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+</body>
+</html>
 
 
-    }
-    h1{
-        font-size: 2.5rem;
-        text-shadow: 2px 3px 4px #4963d4;
-    }
-    input{
-       height: 1.7rem;
-       width: 25rem;
-       border:0.3rem;
-       background-color: rgb(236, 240, 237);
-       border-radius:0.2rem;
-       font-size: 1rem;
 
-    }
-    button{
-        height:2rem;
-        width: 5rem; 
-        background-color: rgb(110, 190, 243);
-        border-radius: 50% 20% / 10% 40%;
-    }
-    button:hover{
-        color:white;
-        background-color: rgb(149, 226, 236);
-    }
-    p{
-        color:red;
-    }
-    .add-items{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 29rem;
-        height: 1.5rem;
-        padding: 0.2rem;
-        border-radius:0.4rem;
-    }
-    .add-items:hover{
-        background-color: rgb(238, 234, 234);
-    }
-    .incons{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        gap:0.9rem;
-    }
-    .suggest{
-        width: 29rem;
-        height: 1.5rem;
-        padding: 0.2rem;
-        border-radius:0.2rem;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(146, 245, 179);
-    }
 
-</style>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Grocery_Bud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
     <section>
         <div class="main-container">
@@ -123,4 +81,5 @@
         <script src="script.js"></script>
     </section>
 </body>
-</html>
+</html> -->
+
