@@ -11,32 +11,14 @@ body {
 #nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 4rem;
-    padding: 0 2rem;
+    padding-right: 2rem;
     background-color: white;
-    /* box-shadow: 9px 9px 5px rgb(129, 214, 243); */
+    box-shadow: 9px 9px 5px rgb(129, 214, 243);
 }
 
-.logonav {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-left: 1rem;
-    background-color: white;
-    font-size: 2rem;
-    padding-top: 1rem;
-    display: none; /* Initially hidden */
-}
-
-.logonav a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.logonav a:hover {
-    color: rgb(50, 203, 214);
+span {
+    color: rgb(104, 195, 238);
 }
 
 .left_elemet {
@@ -50,14 +32,6 @@ body {
     align-items: center;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.l1 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 1rem;
 }
 
 .right_elemet {
@@ -77,19 +51,40 @@ body {
     cursor: pointer;
     text-shadow: 2px 3px 4px #4963d4;
     transition: transform 0.1s;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
-/* Media Queries */
+.logonav {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    display: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+a:hover {
+    color: rgb(50, 203, 214);
+}
+
+.l1 {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+
 @media (max-width: 1150px) {
     #menubar {
-        display: block; /* Show menu bar icon */
-    }
-    .l1 {
-        display: flex;
-        justify-content: space-between;
+        display: block;
     }
     .right_elemet, .middel_elemet {
-        display: none; /* Hide right and middle elements */
+        display: none;
     }
 }
