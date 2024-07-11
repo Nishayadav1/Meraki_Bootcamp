@@ -1,55 +1,26 @@
-// import logo from './logo.svg';
-import React, { useState } from "react"
-import './App.css';
-import Home from "./components/Home";
-import User from "./components/User";
-
-
-
+import React, { useState } from 'react';
 
 function App() {
-  const [name,setName]=useState("Nisha")
-  const [num,setNum]=useState(0)
-  // let name="nisha";
+  const [int, setfun] = useState('useSate(nisha)');
+  const [num,setnumf]=useState(0)
+  const [imgsrc,setimg]=useState('/home/nisha/Desktop/Meraki_Bootcap/react/react-new/item-2.jpeg')
 
-  function button(){
-    // name="kajal"
-    // console.log("my name is ",name);
 
-    setName("kajal");
-    console.log("hgfuieicuifgei")
-    setNum(num+1)
-
-    // return(
-    //   // console.log("this is a button")
-    //   alert("butoon function")
-    // )
+  function changeSate() {
+    setfun('changeSate(kajal)');
+    setnumf(num+1)
+    setimg('/home/nisha/Desktop/Meraki_Bootcap/react/react-new/item-3.jpeg')
   }
+
   return (
-    <>
-    <Home/>
-    <User/>
-    <ul>
-      <li>apple</li>
-      <li>banana</li>
-      <li>orange</li>
-    </ul>
-
-
-
-    {/* <button onClick={button}> Click</button> */}
-   {/* second way with funtion prenthisis by arrow function */}
-    {/* <button onClick={()=>button()}> Click1</button>  */}
-
-    {/* third way by direct console */}
-    {/* <button onClick={()=>console.log("I am nisha")}> Click2</button> */}
-    
-    
-    <h1>{name}</h1>
-    <h1>{num}</h1>
-    <button onClick={button}> Click</button>
-    </>
+    <div>
+      <h1>{int}</h1>
+      <h2>{num}</h2>
+      <img src={imgsrc} alt='loding...'></img>
+      <button onClick={changeSate}>click me</button> {/* Pass function reference */}
+    </div>
   );
 }
 
 export default App;
+
