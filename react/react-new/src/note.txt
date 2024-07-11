@@ -1,0 +1,2 @@
+*useEffect
+when ;-crete,update,props when call useeffect
