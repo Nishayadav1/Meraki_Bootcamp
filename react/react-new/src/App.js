@@ -1,25 +1,28 @@
 import React from 'react'
 import './App.css'
-import Header from './components/Header'
-import Props from './components/Props'
-import Home from './components/Home'
-let a='yadab'
+import Header from './components/Header';
+import Props from './components/Props';
+import Home from './components/Home';
+import Arrowfn from './components/Arrowfn';
+let a="ni"
 const App = () => {
   return (
     <>
     <Home/>
-    <Header/>
+    <Header />
     <Props name="nisha"/>
-    <Props name={a}/>
+    <Props age={a}/>
     <div>
     <h1>nisha</h1>
     <h1>jahaka</h1>
     <h2>{2+4}</h2>
     <h3>{a}</h3>
     </div>
+    <Arrowfn/>
     </>
   )
 }
+
 
 export default App
 
