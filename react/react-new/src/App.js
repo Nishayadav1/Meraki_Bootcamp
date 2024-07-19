@@ -1,25 +1,45 @@
-// <--------useeffect start--->
-import React, { useState } from 'react'
-import { useEffect } from 'react'
-function App() {
-  const[count,setCount]=useState(0)
-  useEffect(()=>{
-    console.log("useeffect") })
+import React from 'react'
+import './App.css'
+import Header from './components/Header'
+import Props from './components/Props'
+import Home from './components/Home'
+let a='yadab'
+const App = () => {
   return (
+    <>
+    <Home/>
+    <Header/>
+    <Props name="nisha"/>
+    <Props name={a}/>
     <div>
-      <h1>useeffect in react {count}</h1>
-      <button onClick={()=>setCount(count+1)}>update counter</button>
+    <h1>nisha</h1>
+    <h1>jahaka</h1>
+    <h2>{2+4}</h2>
+    <h3>{a}</h3>
     </div>
+    </>
   )
 }
 
 export default App
+
+// <--------useeffect start--->
+// import React, { useState } from 'react'
+// import { useEffect } from 'react'
+// function App() {
+//   const[count,setCount]=useState(0)
+//   useEffect(()=>{
+//     console.log("useeffect") })
+//   return (
+//     <div>
+//       <h1>useeffect in react {count}</h1>
+//       <button onClick={()=>setCount(count+1)}>update counter</button>
+//     </div>
+//   )
+// }
+
+// export default App
 // <--------useeffect end--->
-
-
-
-
-
 
 
 // <-------- useState------->start
@@ -56,3 +76,6 @@ export default App
 // version-16.8
 //--->hook is aspecial function that lets you "hook into" react features"
 // when will we change state and daynamic content that time use hook 
+
+
+// <------------------useReducer hook------------>start

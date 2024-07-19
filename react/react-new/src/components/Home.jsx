@@ -1,10 +1,9 @@
 import React from 'react'
+import Person from './person'
 
-function Home() {
+function Home(prop1) {
   return (
-    <div>
-      home
-    </div>
+    <Person name="  chandni"/>
   )
 }
 
