@@ -1,8 +1,17 @@
-document.getElementById('menubar').addEventListener('click', function() {
-    const logonav = document.querySelector('.logonav');
-    if (logonav.style.display === 'block') {
-        logonav.style.display = 'none';
+const menuButton = document.querySelector('.btn');
+const listBtn = document.querySelector('.list');
+
+menuButton.addEventListener('click', () => {
+    if (listBtn.style.display === 'flex') {
+        listBtn.style.display = 'none';
     } else {
-        logonav.style.display = 'block';
+        listBtn.style.display = 'flex';
+        listBtn.style.flexDirection = 'column';
+        listBtn.style.position = 'absolute';
+        listBtn.style.top = '60px';
+        listBtn.style.right = '20px';
+        listBtn.style.backgroundColor = 'white';
+        listBtn.style.width = '12rem'
     }
 });
+

@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// with class component
+// import { useState } from 'react'
 import './App.css'
+// import LifeCyle from './components/LifeCyle'
+// import ComDidUpdate from './components/ComDidUpdate'
+// import ShouldComponentUpdate from './components/ShouldComponentUpdate'
+// import ComponentWillUnmount from './components/ComponentWillUnmount'
 
+// import StateHook from './components/Hook/StateHook'
+// import EffectHook from './components/Hook/EffectHook'
+// import UseRefHook from './components/Hook/UseRefHook'
+// import UseMemo from './components/Hook/UseMemo'
+// import CallBackHook from './components/Hook/CallBackHook'
+// import UseContextHook from './components/Hook/UseContextHook'
+import UseReducer from './components/Hook/UseReducer'
+
+
+
+// function change(){
+//   setName('ajay')
+// }
 function App() {
-  const [count, setCount] = useState(0)
-
+  // const[name,setName]=useState('kajal')
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     {/* <LifeCyle namen={name}/>
+     <button onClick={()=>setName('ajay')}>change name</button> */}
+
+    {/* <ComDidUpdate/> */}
+
+    {/* <ShouldComponentUpdate/> */}
+
+    {/* -------------- statet componet will unmount----------------- */}
+    {/* <ComponentWillUnmount/> */}
+
+
+    {/* {-------------hooks-------------} */}
+    {/* useState hook */}
+
+    {/* <StateHook/> */}
+    {/* <EffectHook/> */}
+    {/* bootstrap */}
+
+    {/* <UseRefHook/> */}
+    {/* <UseMemo/> */}
+
+    {/* <CallBackHook/> */}
+
+{/* --------------------hold-------------------------- */}
+    {/* <UseContextHook/> */}
+
+    <UseReducer/>
+
+
+    
+
+
+
     </>
   )
 }
 
 export default App
+ 

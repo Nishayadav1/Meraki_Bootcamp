@@ -3,54 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive NavBar</title>
+    <title>Simple Nav Bar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
-    <nav class="container1">
-        <div id="nav">
-            <div class="left_elemet">
-                <div class="l1">
-                    <div> 
-                        <p>Coding <span>Addict</span></p>
-                    </div>
-                    <div>
-                        <i id="menubar" class="fa-solid fa-bars" style="color: #74c0fc"></i>
-                    </div>
-                </div>
-                <div class="logonav">
-                    <div><a href="#">Home</a></div>
-                    <div><a href="#">About us</a></div>
-                    <div><a href="#">Services</a></div>
-                    <div><a href="#">Tours</a></div>
-                </div>
+    <nav>
+        <div class="logo">Codding <span>Addict</span></div>
+        <button class="btn" aria-label="Toggle navigation">
+            <i id="menubar" class="fa-solid fa-bars" style="color: #74c0fc"></i>
+        </button>
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right_element">
+            <div>
+                <i class="fa-brands fa-facebook" style="color: #74c0fc"></i>
             </div>
-            <div class="middel_elemet">
-                <div class="middel1">Home</div>
-                <div class="middel1">Project</div>
-                <div class="middel1">About</div>
-                <div class="middel1">Contact</div>
+            <div>
+                <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
             </div>
-            <div class="right_elemet">
-                <div>
-                    <i class="fa-brands fa-facebook" style="color: #74c0fc"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-behance" style="color: #74c0fc"></i>
-                </div>
-                <div>
-                    <i class="fa-brands fa-linkedin" style="color: #74c0fc"></i>
-                </div>
-                <div>
-                    <i class="fa-solid fa-gem" style="color: #74c0fc"></i>
-                </div>
+            <div>
+                <i class="fa-brands fa-behance" style="color: #74c0fc"></i>
+            </div>
+            <div>
+                <i class="fa-brands fa-linkedin" style="color: #74c0fc"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-gem" style="color: #74c0fc"></i>
             </div>
         </div>
     </nav>
     <script src="script.js"></script>
 </body>
 </html>
+
+

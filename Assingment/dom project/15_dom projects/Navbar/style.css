@@ -1,90 +1,76 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #080808;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-#nav {
+nav {
     display: flex;
     justify-content: space-between;
-    height: 4rem;
-    padding-right: 2rem;
+    align-items: center;
     background-color: white;
     box-shadow: 9px 9px 5px rgb(129, 214, 243);
+    padding:1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
-
-span {
-    color: rgb(104, 195, 238);
+span{
+    color:#74c0fc;
 }
-
-.left_elemet {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 3px #2b2a2a;
-}
-
-.middel_elemet {
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    font-size: 1.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.right_elemet {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    font-size: 1.5rem;
-    color: rgb(104, 195, 238);
-}
-
-.middel1 {
-    text-shadow: 1px 1px 1px #2b2a2a;
-}
-
-#menubar {
-    font-size: 2rem;
-    cursor: pointer;
-    text-shadow: 2px 3px 4px #4963d4;
-    transition: transform 0.1s;
-    display: none;
-}
-
-.logonav {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    display: none;
-}
-
-a {
+.logo {
     color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+a{
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 1.5rem;
 }
 
 a:hover {
-    color: rgb(50, 203, 214);
+    color: #74c0fc;
 }
 
-.l1 {
+.btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #74c0fc;
+}
+
+.right_element {
     display: flex;
-    width: 100vw;
-    justify-content: space-between;
     align-items: center;
-    padding-right: 1rem;
+    font-size: 2rem;
+    gap: 2rem;
 }
 
+.right_element > div {
+    margin-left: 15px;
+}
 @media (max-width: 1150px) {
-    #menubar {
+    .list {
+        display: none;
+    }
+    .btn{
         display: block;
     }
-    .right_elemet, .middel_elemet {
+    .right_element {
         display: none;
     }
 }

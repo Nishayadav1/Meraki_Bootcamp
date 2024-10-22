@@ -4,6 +4,9 @@ import Header from './components/Header';
 import Props from './components/Props';
 import Home from './components/Home';
 import Arrowfn from './components/Arrowfn';
+import Hook from './components/Hook';
+import HookEffect1 from './components/HookEffect1';
+import HookContext from './components/HookContext';
 let a="ni"
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
     <h3>{a}</h3>
     </div>
     <Arrowfn/>
+    <Hook/>
+    <HookEffect1/>
+    <HookContext/>
     </>
   )
 }

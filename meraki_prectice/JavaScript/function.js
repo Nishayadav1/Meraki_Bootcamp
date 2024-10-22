@@ -70,3 +70,47 @@
 // };
 
 // s();
+
+
+// block scope
+{
+    let a="niaj"
+    var b="hvg"
+    console.log(a)
+}
+// console.log(b) //a is not difine
+
+// function scope
+function add(){
+    let a1="miassd"
+    let b=a1
+    console.log(b)
+}
+// console.log(b)  // not dinfine b
+add()
+
+
+var c=10;
+function add1(){
+    let b1=c+5;
+    console.log("b=",b1)
+}
+// var a2=c+b1;
+var d=c
+console.log("g=",d)
+// console.log(a2)
+add1()
+
+
+
+function nis(){
+    let j=2
+    function mon(){
+        let k=j+1
+        return k
+
+    }
+}
+nis() ///laxical scope
+
+

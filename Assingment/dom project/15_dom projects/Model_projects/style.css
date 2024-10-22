@@ -6,10 +6,14 @@ body{
     margin-top: 2rem;
     background-position: center;
     background-size: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .container{
+    /* border: 2px solid red; */
     height:18rem;
     width:35rem;
     background-color:white;
